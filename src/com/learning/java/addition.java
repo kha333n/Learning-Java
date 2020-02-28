@@ -1,6 +1,6 @@
 package com.learning.java;
 import java.util.Scanner;
-
+//Programme to add numbers
 public class addition
 {
     public static void main (String[] args)
