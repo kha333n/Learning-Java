@@ -7,11 +7,14 @@ public class GradeBookTest
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        GradeBook myGradeBook = new GradeBook();
+        GradeBook myGradeBook = new GradeBook("cs403");
         myGradeBook.DisplayMessage();
         System.out.print("Please enter course name: ");
         String course = input.nextLine();
         System.out.println();
-        myGradeBook.displayMessageP(course);
+        myGradeBook.setCourse(course);
+        myGradeBook.DisplayMessage();
     }
 }
+
+

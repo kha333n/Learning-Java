@@ -2,13 +2,19 @@ package com.learning.java;
 
 public class GradeBook
 {
-    public void DisplayMessage()
+    private String course;
+    public GradeBook(String c)
     {
-        System.out.println("Welcome to the grade Book!");
+        course = c;
     }
-    public void displayMessageP(String course)
-    {
-        System.out.printf("Welcome to the grade book for \n %s! \n", course);
+    public void setCourse(String c) {
+        course = c;
+    }
+    public String getCourse() {
+        return course;
+    }
+    public void DisplayMessage() {
+        System.out.printf("Welcome to the grade book for \n %s! \n",course);
     }
 }
 
