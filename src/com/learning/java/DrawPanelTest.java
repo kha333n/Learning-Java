@@ -14,3 +14,4 @@ public class DrawPanelTest{
         application.setVisible(true);
     }
 }
+
