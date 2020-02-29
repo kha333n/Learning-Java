@@ -14,6 +14,7 @@ public class GradeBookTest
         System.out.println();
         myGradeBook.setCourse(course);
         myGradeBook.DisplayMessage();
+        myGradeBook.determineClassAverage();
     }
 }
 
