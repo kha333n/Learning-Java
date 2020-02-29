@@ -7,6 +7,7 @@ public class SwitchStatement
     {
         String s;
         Scanner input = new Scanner(System.in);
+        System.out.println("Enter Character: ");
         s = input.next();
 
         switch (s)
