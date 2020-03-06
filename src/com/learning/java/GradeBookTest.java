@@ -6,15 +6,11 @@ public class GradeBookTest
 {
     public static void main(String[] args)
     {
-        Scanner input = new Scanner(System.in);
-        GradeBook myGradeBook = new GradeBook("cs403");
-        myGradeBook.DisplayMessage();
-        System.out.print("Please enter course name: ");
-        String course = input.nextLine();
-        System.out.println();
-        myGradeBook.setCourse(course);
-        myGradeBook.DisplayMessage();
-        myGradeBook.determineClassAverage();
+        // array of student grades
+        int[] gradesArray = { 87, 68, 94, 100, 83, 78, 85, 91, 76, 87 };
+
+        GradeBook newGradeBook = new GradeBook("CS101 Introduction to Java Programming", gradesArray);
+        newGradeBook.processGrades();
     }
 }
 
